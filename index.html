@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>D´Maria | Artigos Religiosos</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins', sans-serif;
+    }
+
+    body{
+      background:#f7f3ee;
+      color:#333;
+      line-height:1.6;
+    }
+
+    header{
+      background:linear-gradient(135deg,#6b3f1d,#a36a3d);
+      color:white;
+      padding:20px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      position:sticky;
+      top:0;
+      z-index:1000;
+      box-shadow:0 4px 15px rgba(0,0,0,.12);
+    }
+
+    .logo{
+      font-size:32px;
+      font-weight:700;
+      letter-spacing:1px;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:25px;
+      font-weight:500;
+      transition:.3s;
+    }
+
+    nav a:hover{
+      color:#ffe0b5;
+    }
+
+    .hero{
+      height:90vh;
+      background:
+      linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+      url('https://images.unsplash.com/photo-1504052434569-70ad5836ab65?q=80&w=1400&auto=format&fit=crop')
+      center/cover;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      color:white;
+      padding:20px;
+    }
+
+    .hero-content{
+      max-width:800px;
+      animation:fadeIn 1.2s ease;
+    }
+
+    .hero h1{
+      font-size:64px;
+      margin-bottom:20px;
+    }
+
+    .hero p{
+      font-size:22px;
+      margin-bottom:35px;
+    }
+
+    .btn{
+      display:inline-block;
+      background:#d9a066;
+      color:white;
+      text-decoration:none;
+      padding:15px 35px;
+      border-radius:50px;
+      transition:.3s;
+      font-weight:600;
+    }
+
+    .btn:hover{
+      background:#b9783e;
+      transform:translateY(-4px);
+    }
+
+    section{
+      padding:80px 8%;
+    }
+
+    .section-title{
+      text-align:center;
+      margin-bottom:55px;
+    }
+
+    .section-title h2{
+      font-size:42px;
+      color:#6b3f1d;
+    }
+
+    .products{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:30px;
+    }
+
+    .card{
+      background:white;
+      border-radius:20px;
+      overflow:hidden;
+      box-shadow:0 8px 25px rgba(0,0,0,.08);
+      transition:.4s;
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+    }
+
+    .card img{
+      width:100%;
+      height:260px;
+      object-fit:cover;
+    }
+
+    .card-content{
+      padding:25px;
+    }
+
+    .card h3{
+      color:#6b3f1d;
+      margin-bottom:10px;
+    }
+
+    .price{
+      color:#b9783e;
+      font-size:24px;
+      font-weight:700;
+      margin:18px 0;
+    }
+
+    .about{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:50px;
+      align-items:center;
+    }
+
+    .about img{
+      width:100%;
+      border-radius:20px;
+      box-shadow:0 10px 25px rgba(0,0,0,.1);
+    }
+
+    .about-text h2{
+      color:#6b3f1d;
+      font-size:42px;
+      margin-bottom:20px;
+    }
+
+    .contact-box{
+      max-width:700px;
+      margin:auto;
+      background:white;
+      padding:40px;
+      border-radius:20px;
+      box-shadow:0 5px 20px rgba(0,0,0,.08);
+    }
+
+    .contact-box input,
+    .contact-box textarea{
+      width:100%;
+      padding:15px;
+      margin-bottom:18px;
+      border:1px solid #ddd;
+      border-radius:10px;
+      outline:none;
+    }
+
+    .contact-box button{
+      border:none;
+      cursor:pointer;
+    }
+
+    footer{
+      background:#40230f;
+      color:white;
+      text-align:center;
+      padding:30px;
+      margin-top:50px;
+    }
+
+    @keyframes fadeIn{
+      from{
+        opacity:0;
+        transform:translateY(30px);
+      }
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+
+    @media(max-width:900px){
+
+      nav{
+        display:none;
+      }
+
+      .hero h1{
+        font-size:42px;
+      }
+
+      .hero p{
+        font-size:18px;
+      }
+
+      .about{
+        grid-template-columns:1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+
+    <div class="logo">D´Maria</div>
+
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+  </header>
+
+  <section class="hero" id="inicio">
+
+    <div class="hero-content">
+
+      <h1>D´Maria Artigos Religiosos</h1>
+
+      <p>
+        Fé, devoção e espiritualidade em cada detalhe.
+        Produtos especiais para seu lar e sua caminhada cristã.
+      </p>
+
+      <a href="#produtos" class="btn">Conhecer Produtos</a>
+
+    </div>
+
+  </section>
+
+  <section id="produtos">
+
+    <div class="section-title">
+      <h2>Produtos em Destaque</h2>
+    </div>
+
+    <div class="products">
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=1200&auto=format&fit=crop">
+
+        <div class="card-content">
+
+          <h3>Bíblia Sagrada</h3>
+
+          <p>
+            Edição especial com acabamento luxuoso.
+          </p>
+
+          <div class="price">R$ 89,90</div>
+
+          <a href="#" class="btn">Comprar</a>
+
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=1200&auto=format&fit=crop">
+
+        <div class="card-content">
+
+          <h3>Terço Artesanal</h3>
+
+          <p>
+            Produzido com materiais delicados e resistentes.
+          </p>
+
+          <div class="price">R$ 39,90</div>
+
+          <a href="#" class="btn">Comprar</a>
+
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1507692049790-de58290a4334?q=80&w=1200&auto=format&fit=crop">
+
+        <div class="card-content">
+
+          <h3>Imagem de Nossa Senhora</h3>
+
+          <p>
+            Perfeita para decorar e fortalecer sua fé.
+          </p>
+
+          <div class="price">R$ 119,90</div>
+
+          <a href="#" class="btn">Comprar</a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="sobre">
+
+    <div class="about">
+
+      <img src="https://images.unsplash.com/photo-1504052434569-70ad5836ab65?q=80&w=1200&auto=format&fit=crop">
+
+      <div class="about-text">
+
+        <h2>Sobre a D´Maria</h2>
+
+        <p>
+          A D´Maria nasceu com a missão de levar fé,
+          esperança e espiritualidade através de produtos
+          religiosos selecionados com carinho.
+        </p>
+
+        <br>
+
+        <p>
+          Trabalhamos com artigos de qualidade para presentear,
+          decorar e fortalecer sua caminhada espiritual.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="contato">
+
+    <div class="section-title">
+      <h2>Fale Conosco</h2>
+    </div>
+
+    <div class="contact-box">
+
+      <input type="text" placeholder="Seu nome">
+
+      <input type="email" placeholder="Seu e-mail">
+
+      <textarea rows="5" placeholder="Digite sua mensagem"></textarea>
+
+      <button class="btn">Enviar Mensagem</button>
+
+    </div>
+
+  </section>
+
+  <footer>
+    © 2026 D´Maria Artigos Religiosos - Todos os direitos reservados
+  </footer>
+
+</body>
+</html>
